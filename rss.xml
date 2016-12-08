@@ -4,21 +4,21 @@
     <title>Notebook of thoughts</title>
     <link>http://abhishekam.github.io</link>
     <description>...</description>
-    <pubDate>Fri, 09 Dec 2016 01:07:41 IST</pubDate>
-    <lastBuildDate>Fri, 09 Dec 2016 01:07:41 IST</lastBuildDate>
+    <pubDate>Fri, 09 Dec 2016 01:09:30 IST</pubDate>
+    <lastBuildDate>Fri, 09 Dec 2016 01:09:30 IST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
       <title>foobar Logic Question</title>
       <link>http://abhishekam.github.io/blog/2016/12/08/foobar-logic-question</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[A simple logic question that can be asked to evaluate basic logical thinking as well as programming style]]></description>
       <pubDate>2016-12-09</pubDate>
       <guid>http://abhishekam.github.io/blog/2016/12/08/foobar-logic-question</guid>
     </item>
     <item>
       <title>Hello</title>
       <link>http://abhishekam.github.io/blog/2016/11/19/hello</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[Trying to use emacs and org to blog]]></description>
       <pubDate>2016-12-09</pubDate>
       <guid>http://abhishekam.github.io/blog/2016/11/19/hello</guid>
     </item>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>foobar Logic Question - Notebook of thoughts</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Abhishekam Swamy" />
+  <meta name="description" content="A simple logic question that can be asked to evaluate basic logical thinking as well as programming style" />
+  <meta name="keywords" content="programming, rant, interview" />
+
+  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
+  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+</head>
+
+  <body class="container">
+<header id="header">
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
+        <div class="container-fluid">
+<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Notebook of thoughts</a>
+        </div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/">Blog</a></li>
+          <li><a href="https://github.com/abhishekam">GitHub</a></li>
+        </ul>
+</div>
+</div>
+    </nav>
+</body>
+</header>
+
+<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>foobar Logic Question</h1>
+            <p>
+So, without much ado, here's the question:
+<i>What is wrong, if at all, with the statement below?</i>
+</p>
+<div class="org-src-container">
+<pre class="src src-C">HasError = !validationFailed;
+</pre>
+</div>
+<div id="outline-container-org8b93b2a" class="outline-2">
+<h2 id="org8b93b2a">What is wrong?</h2>
+<div class="outline-text-2" id="text-org8b93b2a">
+<p>
+if validationFailed is <b>True</b>, that means validation <span class="underline">HAS FAILED</span>. Which means there has to be an error, and so HasError in the above code had to be <b>True</b>, but the above code evaluates HasError to be <b>False!</b> So, logically, the above code is <b>WRONG</b>
+</p>
+</div>
+</div>
+<div id="outline-container-org3dfa989" class="outline-2">
+<h2 id="org3dfa989">What it should have been?</h2>
+<div class="outline-text-2" id="text-org3dfa989">
+<p>
+Ideally, it should have been
+</p>
+<div class="org-src-container">
+<pre class="src src-C">HasError = !validationPassed;
+</pre>
+</div>
+<p>
+or
+</p>
+<div class="org-src-container">
+<pre class="src src-C">HasError == validationFailed;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgad006e2" class="outline-2">
+<h2 id="orgad006e2">Notes</h2>
+<div class="outline-text-2" id="text-orgad006e2">
+<ul class="org-ul">
+<li>"Programs should be written for people to read, and only incidentally for machines to execute" - SICP</li>
+<li><b>NOTE:</b> If you do have such code in your code base, clean it up! <i>"Don't live with broken windows" - The Pragmatic Programmer</i></li>
+</ul>
+</div>
+</div>
+
+    </div>
+</section>
+
+
+<footer id="footer">
+    <br />
+</footer>
+
+  </body>
+</html>
