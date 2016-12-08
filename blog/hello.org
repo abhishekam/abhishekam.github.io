@@ -1,0 +1,12 @@
+#+TITLE:       Hello
+#+AUTHOR:      Abhishekam Swamy
+#+EMAIL:       abhishekamswamy@framesinmylife.com
+#+DATE:        2016-11-19 Sat
+#+URI:         /blog/%y/%m/%d/hello
+#+KEYWORDS:    junk
+#+TAGS:        junk
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Trying to use emacs and org to blog
+
+Hello, feels great to be able to blog to the internet from my favorite editor - Emacs!

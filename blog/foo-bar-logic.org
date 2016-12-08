@@ -1,0 +1,26 @@
+#+TITLE:       foobar Logic Question
+#+AUTHOR:      Abhishekam Swamy
+#+EMAIL:       abhishekamswamy@framesinmylife.com
+#+DATE:        2016-12-08 Thu
+#+URI:         /blog/%y/%m/%d/foobar-logic-question
+#+KEYWORDS:    programming, rant, interview
+#+TAGS:        programming, interview, rant
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: A simple logic question that can be asked to evaluate basic logical thinking as well as programming style
+So, without much ado, here's the question:
+/What is wrong, if at all, with the statement below?/
+#+BEGIN_SRC C
+  HasError = !validationFailed;
+#+END_SRC
+** if validationFailed is *True*, that means validation _HAS FAILED_. Which means there has to be an error, and so HasError in the above code had to be *True*, but the above code evaluates HasError to be *False!* So, logically, the above code is *WRONG*
+** Ideally, it should have been
+#+BEGIN_SRC C
+  HasError = !validationPassed;
+#+END_SRC
+or
+#+BEGIN_SRC C
+  HasError == validationFailed;
+#+END_SRC
+** "Programs should be written for people to read, and only incidentally for machines to execute" - SICP
+** *NOTE:* If you do have such code in your code base, clean it up! /"Don't live with broken windows" - The Pragmatic Programmer/
