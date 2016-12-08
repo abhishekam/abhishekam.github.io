@@ -6,7 +6,7 @@
 #+KEYWORDS:    programming, rant, interview
 #+TAGS:        programming, interview, rant
 #+LANGUAGE:    en
-#+OPTIONS:     H:1 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: A simple logic question that can be asked to evaluate basic logical thinking as well as programming style
 So, without much ado, here's the question:
 /What is wrong, if at all, with the statement below?/
