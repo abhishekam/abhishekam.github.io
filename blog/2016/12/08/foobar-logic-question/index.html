@@ -53,17 +53,17 @@ So, without much ado, here's the question:
 <pre class="src src-C">HasError = !validationFailed;
 </pre>
 </div>
-<div id="outline-container-org93b008a" class="outline-2">
-<h2 id="org93b008a">What is wrong?</h2>
-<div class="outline-text-2" id="text-org93b008a">
+<div id="outline-container-org970e116" class="outline-2">
+<h2 id="org970e116">What is wrong?</h2>
+<div class="outline-text-2" id="text-org970e116">
 <p>
 if validationFailed is <b>True</b>, that means validation <span class="underline">HAS FAILED</span>. Which means there has to be an error, and so HasError in the above code had to be <b>True</b>, but the above code evaluates HasError to be <b>False!</b> So, logically, the above code is <b>WRONG</b>
 </p>
 </div>
 </div>
-<div id="outline-container-orgaf5a8fa" class="outline-2">
-<h2 id="orgaf5a8fa">What it should have been?</h2>
-<div class="outline-text-2" id="text-orgaf5a8fa">
+<div id="outline-container-orgc50d57c" class="outline-2">
+<h2 id="orgc50d57c">What it should have been?</h2>
+<div class="outline-text-2" id="text-orgc50d57c">
 <p>
 Ideally, it should have been
 </p>
@@ -80,9 +80,9 @@ or
 </div>
 </div>
 </div>
-<div id="outline-container-org1a30b0c" class="outline-2">
-<h2 id="org1a30b0c">Notes</h2>
-<div class="outline-text-2" id="text-org1a30b0c">
+<div id="outline-container-org8cdd36b" class="outline-2">
+<h2 id="org8cdd36b">Notes</h2>
+<div class="outline-text-2" id="text-org8cdd36b">
 <ul class="org-ul">
 <li>"Programs should be written for people to read, and only incidentally for machines to execute" - SICP</li>
 <li><b>NOTE:</b> If you do have such code in your code base, clean it up! <i>"Don't live with broken windows" - The Pragmatic Programmer</i></li>
