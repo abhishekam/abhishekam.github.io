@@ -4,55 +4,109 @@
     <title>Index - Notebook of thoughts</title>
     <meta charset="utf-8" />
     <meta name="author" content="Abhishekam Swamy" />
-    <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/media/css/styles.css">
+    <link rel="stylesheet" href="/media/css/slicknav.css">
+    <link rel="stylesheet" href="/media/css/highlight.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <link rel="icon" href="/media/images/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/images/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/images/favicon152.png">
+    <link rel="apple-touch-icon" sizes="196x196" href="/media/images/favicon196.png">
   </head>
   <body class="container">
-    <header id="header">
-      <body>
-        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Notebook of thoughts</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Blog</a></li>
-                <li><a href="https://github.com/abhishekam">GitHub</a></li>
-              </ul>
-            </div>
-          </div>
+    <div id="wrapper" >
+      <header class="no-border">
+        <nav class="byline">
+          <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/tags">Tags</a></li>
+          </ul>
         </nav>
+        <div class="downloads">
+          <a href="https://github.com/abhishekam" class="fa fa-github"></a>
+          <a href="http://twitter.com/cpaulik" class="fa fa-twitter"></a>
+          <a href="http://instagram.com/cpaulik" class="fa fa-instagram"></a>
+        </div>
+      </header>
+      <body>
+        <header>
+          <hgroup>
+            <h1>Splendid Abacus</h1>
+            <h2 class="tagline">About a man and his computer.</h2>
+          </hgroup>
+        </header>
+        <section id="content">
+          <ul id="post-list">
+            <li>
+              <article class="hentry">
+                <header class="article-list" >
+                  <h2 class="entry-title">
+                    <a href="/blog/2016/12/08/foobar-logic-question">foobar Logic Question</a>
+                  </h2>
+                  <footer class="post-info">
+                    <abbr class="published">2016-12-08</abbr>
+                  </footer>
+                  <div class="entry-content">
+                    <p>
+                      A simple logic question that can be asked to evaluate basic logical thinking as well as programming style
+                    </p>
+                  </div>
+                </header>
+              </article>
+            </li>
+          </ul>
+          <ul id="post-list">
+            <li>
+              <article class="hentry">
+                <header class="article-list" >
+                  <h2 class="entry-title">
+                    <a href="/blog/2016/11/19/hello">Hello</a>
+                  </h2>
+                  <footer class="post-info">
+                    <abbr class="published">2016-11-19</abbr>
+                  </footer>
+                  <div class="entry-content">
+                    <p>
+                      Trying to use emacs and org to blog
+                    </p>
+                  </div>
+                </header>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="/media/js/main.js"></script>
       </body>
-    </header>
-    <section id="content" role="main">
-      <div id="outline-container-sec-1" class="row" style="padding-top: 70px">
-        <div class="container center-block">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 col-sm-12">
-            <div class="panel panel-default" id="text-1">
-              <div class="panel-heading">
-                <h3 id="sec-1" class="panel-title">Blog</h3>
-              </div>
-              <ul class="list-group">
-                <li class="list-group-item title"><a href="/blog/2016/12/08/foobar-logic-question">foobar Logic Question</a></li>
-                <li class="list-group-item title"><a href="/blog/2016/11/19/hello">Hello</a></li>
-              </ul>
+      <div>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script> -->
+        <!-- <script src='http://google-code-prettify.googlecode.com/svn/trunk/src/lang-lisp.js' type='text/javascript'></script> -->
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <![endif]-->
+        <script src="/media/js/main.js"></script>
+        <script src="/media/js/jquery.slicknav.min.js"></script>
+        <script>
+          $(function(){
+          $('#menu').slicknav({'label':''});
+          });
+        </script>
+        <div align="center">
+          <footer id="footer">
+            <a href="/about/">About</a>
+            <div class="right-footer">
+              <a href="/blog">Archive</a>
+              <a href="/tags">Tags</a>
             </div>
-            <div class="col-md-2"></div>
-          </div>
+          </footer>
         </div>
       </div>
-    </section>
-    <footer id="footer">
-      <br />
-    </footer>
+    </div>
   </body>
 </html>

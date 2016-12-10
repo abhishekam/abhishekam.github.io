@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <title>foobar Logic Question - Notebook of thoughts</title>
-  <meta charset="utf-8" />
-  <meta name="author" content="Abhishekam Swamy" />
-  <meta name="description" content="A simple logic question that can be asked to evaluate basic logical thinking as well as programming style" />
-  <meta name="keywords" content="programming, rant, interview" />
+    <title>foobar Logic Question - Notebook of thoughts</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Abhishekam Swamy" />
+        <meta name="description" content="A simple logic question that can be asked to evaluate basic logical thinking as well as programming style" />
+        <meta name="keywords" content="programming, rant, interview" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/media/css/styles.css">
+    <link rel="stylesheet" href="/media/css/slicknav.css">
+    <link rel="stylesheet" href="/media/css/highlight.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css"></style>
 
-  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
-  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+    <link rel="icon" href="/media/images/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/images/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/images/favicon152.png">
+    <link rel="apple-touch-icon" sizes="196x196" href="/media/images/favicon196.png">
 </head>
 
   <body class="container">
-<header id="header">
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
-        <div class="container-fluid">
-<div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Notebook of thoughts</a>
-        </div>
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Blog</a></li>
-          <li><a href="https://github.com/abhishekam">GitHub</a></li>
+    <div id="wrapper" >
+<header class="no-border">
+    <nav class="byline">
+        <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/tags">Tags</a></li>
         </ul>
-</div>
-</div>
     </nav>
-</body>
+<div class="downloads">
+          <a href="https://github.com/abhishekam" class="fa fa-github"></a>
+          <a href="http://twitter.com/cpaulik" class="fa fa-twitter"></a>
+          <a href="http://instagram.com/cpaulik" class="fa fa-instagram"></a>
+        </div>
 </header>
 
-<section id="content" role="main">
-    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
-        <div class="col-md-2"></div>
-            <h1>foobar Logic Question</h1>
-            <p>
+<div>
+    <header>
+    <hgroup>
+        <h1>foobar Logic Question</h1>
+    </hgroup>
+    </header>
+    <section id="content" class="body-article">
+        <div class="entry-content">
+            <div id="content">
+                <p>
 So, without much ado, here's the question:
 <i>What is wrong, if at all, with the statement below?</i>
 </p>
@@ -49,17 +53,17 @@ So, without much ado, here's the question:
 <pre class="src src-C">HasError = !validationFailed;
 </pre>
 </div>
-<div id="outline-container-org8b93b2a" class="outline-2">
-<h2 id="org8b93b2a">What is wrong?</h2>
-<div class="outline-text-2" id="text-org8b93b2a">
+<div id="outline-container-org93b008a" class="outline-2">
+<h2 id="org93b008a">What is wrong?</h2>
+<div class="outline-text-2" id="text-org93b008a">
 <p>
 if validationFailed is <b>True</b>, that means validation <span class="underline">HAS FAILED</span>. Which means there has to be an error, and so HasError in the above code had to be <b>True</b>, but the above code evaluates HasError to be <b>False!</b> So, logically, the above code is <b>WRONG</b>
 </p>
 </div>
 </div>
-<div id="outline-container-org3dfa989" class="outline-2">
-<h2 id="org3dfa989">What it should have been?</h2>
-<div class="outline-text-2" id="text-org3dfa989">
+<div id="outline-container-orgaf5a8fa" class="outline-2">
+<h2 id="orgaf5a8fa">What it should have been?</h2>
+<div class="outline-text-2" id="text-orgaf5a8fa">
 <p>
 Ideally, it should have been
 </p>
@@ -76,9 +80,9 @@ or
 </div>
 </div>
 </div>
-<div id="outline-container-orgad006e2" class="outline-2">
-<h2 id="orgad006e2">Notes</h2>
-<div class="outline-text-2" id="text-orgad006e2">
+<div id="outline-container-org1a30b0c" class="outline-2">
+<h2 id="org1a30b0c">Notes</h2>
+<div class="outline-text-2" id="text-org1a30b0c">
 <ul class="org-ul">
 <li>"Programs should be written for people to read, and only incidentally for machines to execute" - SICP</li>
 <li><b>NOTE:</b> If you do have such code in your code base, clean it up! <i>"Don't live with broken windows" - The Pragmatic Programmer</i></li>
@@ -86,13 +90,62 @@ or
 </div>
 </div>
 
+            </div>
+        </div>
+    </section>
+</div>
+
+    <div>
+      <div class="article-share-tags">
+          <!-- <span title="post date" class="post-info">2016-12-08</span> -->
+          <div class="end-article-tags">
+            <i class="fa fa-tags" ></i>
+            <a href="/tags/programming/">programming</a>, <a href="/tags/interview/">interview</a>, <a href="/tags/rant/">rant</a>
+          </div>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2016/12/08/foobar-logic-question";
+          var disqus_url = "http://abhishekam.github.io/blog/2016/12/08/foobar-logic-question";
+          var disqus_shortname = 'notebookofthoughts';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script> -->
+      <!-- <script src='http://google-code-prettify.googlecode.com/svn/trunk/src/lang-lisp.js' type='text/javascript'></script> -->
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <![endif]-->
+      <script src="/media/js/main.js"></script>
+      <script src="/media/js/jquery.slicknav.min.js"></script>
+      <script>
+      $(function(){
+          $('#menu').slicknav({'label':''});
+      });
+      </script>
+      <div align="center">
+      <footer id="footer">
+            <a href="/about/">About</a>
+            <div class="right-footer">
+              <a href="/blog">Archive</a>
+              <a href="/tags">Tags</a>
+            </div>
+      </footer>
+      </div>
     </div>
-</section>
 
-
-<footer id="footer">
-    <br />
-</footer>
-
+  </div>
   </body>
 </html>
